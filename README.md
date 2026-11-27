@@ -3,7 +3,7 @@
 Static landing page for **Sidewalk Empire** (the iOS + Apple Watch game; White Hot
 until 2026-11-26). Plain HTML/CSS, no build step. Lives in its own public repo so
 the game's source stays private. Served by GitHub Pages at
-`https://whitehot.yourstrategy.co` (the old `reverdure.yourstrategy.co` redirects here from the `reverdure-redirect` repo).
+`https://sidewalkempire.yourstrategy.co` (`whitehot.yourstrategy.co` until 2026-11-26; the older addresses are gone).
 
 ## Files
 
