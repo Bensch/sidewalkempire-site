@@ -1,10 +1,10 @@
-"""White Hot's site art (2026-10-21), from territory drawn by the game's own map code:
+"""Sidewalk Empire's site art (2026-10-21), from territory drawn by the game's own map code:
 the game repo's ``scripts/brand/render-territory`` bakes ground through the app's
 ``HeatField`` (the map's heat overlay) with its borders, the way the map draws it.
 
-    # in the game repo (Reverdure):
-    swiftc -O -o /tmp/render-territory App/ReverdureApp/Map/HeatRamp.swift \
-        App/ReverdureApp/Map/HeatField.swift App/ReverdureApp/Map/RoundedPath.swift \
+    # in the game repo (SidewalkEmpire):
+    swiftc -O -o /tmp/render-territory App/SidewalkEmpireApp/Map/HeatRamp.swift \
+        App/SidewalkEmpireApp/Map/HeatField.swift App/SidewalkEmpireApp/Map/RoundedPath.swift \
         scripts/brand/render-territory/main.swift
     /tmp/render-territory 2400 1400 46 /tmp/territory-hero.png 7
     /tmp/render-territory 2400 1260 52 /tmp/territory-og.png 11
@@ -41,12 +41,14 @@ def og_image(territory_path):
     icon = Image.open(os.path.join(ROOT, "assets", "app-icon.png")).convert("RGB").resize((192, 192), Image.LANCZOS)
     m = Image.new("L", icon.size, 0)
     ImageDraw.Draw(m).rounded_rectangle([0, 0, *icon.size], radius=44, fill=255)
-    img.paste(icon, (160, 300), m)
-    d.text((160, 544), "White Hot", font=font(208, "Heavy"), fill=(246, 242, 236))
-    d.text((168, 804), "Heat up your map.", font=font(88, "Semibold"), fill=(255, 140, 31))
-    d.text((168, 932), "A territory game played with real workouts.", font=font(60, "Regular"),
+    img.paste(icon, (160, 150), m)
+    # The name on two lines: on one it runs out of the cold side and onto the heat.
+    d.text((160, 372), "Sidewalk", font=font(208, "Heavy"), fill=(246, 242, 236))
+    d.text((160, 590), "Empire", font=font(208, "Heavy"), fill=(246, 242, 236))
+    d.text((168, 856), "Heat up your map.", font=font(88, "Semibold"), fill=(255, 140, 31))
+    d.text((168, 984), "A territory game played with real workouts.", font=font(60, "Regular"),
            fill=(201, 196, 189))
-    d.text((168, 1024), "iPhone + Apple Watch  \u00b7  Free beta", font=font(48, "Medium"), fill=(141, 135, 128))
+    d.text((168, 1076), "iPhone + Apple Watch  \u00b7  Free beta", font=font(48, "Medium"), fill=(141, 135, 128))
     img.resize((1200, 630), Image.LANCZOS).save(os.path.join(ROOT, "og-image.png"), optimize=True)
 
 
