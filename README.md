@@ -1,7 +1,7 @@
-# Sidewalk Empire — marketing site
+# White Hot — marketing site
 
-Static landing page for **Sidewalk Empire** (the iOS + Apple Watch game; White Hot
-until 2026-11-26). Plain HTML/CSS, no build step. Lives in its own public repo so
+Static landing page for **White Hot** (the iOS + Apple Watch game; its codebase is
+still called Reverdure). Plain HTML/CSS, no build step. Lives in its own public repo so
 the game's source stays private. Served by GitHub Pages at
 `https://whitehot.yourstrategy.co` (the old `reverdure.yourstrategy.co` redirects here from the `reverdure-redirect` repo).
 

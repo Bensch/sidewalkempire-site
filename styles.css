@@ -1,4 +1,4 @@
-/* Sidewalk Empire — the game's own look (2026-10-21): the dark map's ground, the heat ramp
+/* White Hot — the game's own look (2026-10-21): the dark map's ground, the heat ramp
    tiles glow on (dull red → cherry → orange → yellow → white hot, App/ReverdureApp/
    Map/HeatRamp.swift), the ember the play button wears, and Liquid Glass panels.
    Mobile-first. The share landing page (server/app/routes/share.py) copies these
@@ -92,9 +92,6 @@ h1, h2, h3 { color: var(--ink); margin: 0; letter-spacing: -0.02em; }
   font-weight: 800; font-size: 1.15rem; letter-spacing: -0.01em;
 }
 .wordmark-icon { width: 30px; height: 30px; border-radius: 8px; }
-/* The name is fifteen letters: keep it on one line, smaller on the narrowest phones. */
-.wordmark { white-space: nowrap; }
-@media (max-width: 360px) { .wordmark { font-size: 1rem; gap: 8px; } }
 
 /* BUTTONS — capsules, the app's */
 .btn {
