@@ -45,7 +45,7 @@ def og_image(territory_path):
     # The name on two lines: on one it runs out of the cold side and onto the heat.
     d.text((160, 372), "Sidewalk", font=font(208, "Heavy"), fill=(246, 242, 236))
     d.text((160, 590), "Empire", font=font(208, "Heavy"), fill=(246, 242, 236))
-    d.text((168, 856), "Heat up your map.", font=font(88, "Semibold"), fill=(255, 140, 31))
+    d.text((168, 856), "Build your empire.", font=font(88, "Semibold"), fill=(255, 140, 31))
     d.text((168, 984), "A territory game played with real workouts.", font=font(60, "Regular"),
            fill=(201, 196, 189))
     d.text((168, 1076), "iPhone + Apple Watch  \u00b7  Free beta", font=font(48, "Medium"), fill=(141, 135, 128))

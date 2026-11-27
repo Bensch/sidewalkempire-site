@@ -169,6 +169,21 @@ h1, h2, h3 { color: var(--ink); margin: 0; letter-spacing: -0.02em; }
 }
 .ramp span:last-child { color: var(--ink); }
 
+/* The three sides on the map (2026-11-27): your empire, your allies, your rivals — the
+   game's own blue, purple and red. */
+.sides {
+  display: flex; flex-wrap: wrap; gap: 10px 22px; margin-top: 26px;
+  font-size: .9rem; font-weight: 650; color: var(--ink-soft); letter-spacing: .01em;
+}
+.side { display: inline-flex; align-items: center; gap: 9px; }
+.side::before {
+  content: ""; width: 16px; height: 16px; border-radius: 4px;
+  clip-path: polygon(25% 3%, 75% 3%, 100% 50%, 75% 97%, 25% 97%, 0 50%);
+}
+.side-you::before { background: var(--you); box-shadow: 0 0 18px var(--you); }
+.side-ally::before { background: var(--ally); }
+.side-rival::before { background: var(--rival); }
+
 /* CARDS */
 .cards { display: grid; gap: 16px; }
 .card { border-radius: var(--radius); padding: 26px 24px; }
