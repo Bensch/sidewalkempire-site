@@ -70,7 +70,7 @@ h1, h2, h3 { color: var(--ink); margin: 0; letter-spacing: -0.02em; }
 }
 
 /* Glass: a translucent panel that lenses what's under it, with a lit top edge. */
-.glass, .card, .diff, .feature, .faq-item, .site-header, .btn-glass {
+.glass, .card, .diff, .faq-item, .site-header, .btn-glass {
   background: var(--glass);
   -webkit-backdrop-filter: blur(22px) saturate(160%);
   backdrop-filter: blur(22px) saturate(160%);
@@ -145,7 +145,6 @@ h1, h2, h3 { color: var(--ink); margin: 0; letter-spacing: -0.02em; }
 
 /* BANDS */
 .band { padding: 84px 0; position: relative; }
-.band-alt { background: linear-gradient(180deg, var(--ground) 0%, var(--ground-2) 50%, var(--ground) 100%); }
 .kicker {
   margin: 0 0 10px; font-size: .8rem; font-weight: 700;
   letter-spacing: .12em; text-transform: uppercase; color: var(--heat-4);
@@ -205,10 +204,6 @@ h1, h2, h3 { color: var(--ink); margin: 0; letter-spacing: -0.02em; }
 .diff p { margin: 0; }
 
 /* FEATURES */
-.features { display: grid; gap: 14px; margin-top: 18px; }
-.feature { border-radius: 22px; padding: 22px 22px 20px; }
-.feature h3 { font-size: 1.05rem; }
-.feature p { margin: 0; font-size: .98rem; }
 .splits { display: grid; gap: 7px; margin-top: 16px; }
 /* The ramp laid across the full width, shown as far as the split ran — the app's. */
 .splits span {
@@ -246,7 +241,6 @@ h1, h2, h3 { color: var(--ink); margin: 0; letter-spacing: -0.02em; }
 @media (min-width: 760px) {
   .cards { grid-template-columns: repeat(3, 1fr); }
   .diffs { grid-template-columns: repeat(3, 1fr); }
-  .features { grid-template-columns: repeat(2, 1fr); }
 }
 @media (min-width: 980px) {
   .hero-bg {
@@ -257,5 +251,4 @@ h1, h2, h3 { color: var(--ink); margin: 0; letter-spacing: -0.02em; }
   }
   .hero { padding: 84px 0 110px; }
   .hero-inner { grid-template-columns: 1.15fr 1fr; gap: 56px; }
-  .features { grid-template-columns: repeat(4, 1fr); }
 }
